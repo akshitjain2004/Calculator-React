@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Header from "./Component/Header/Header"
+import Header from "./Component/Header/Header";
 import moonIcon from "./assets/moon.png";
 import sunIcon from "./assets/sun.png";
 
@@ -103,9 +103,9 @@ function App() {
           </div>
           <img src={isDarkMode ? moonIcon : sunIcon} alt="mode" />
         </div>
-              
-        <Header expression={expression} result={result} history={history}/>
-        <KeyPad/>
+
+        <Header expression={expression} result={result} history={history} />
+        <KeyPad handleKeyPress={handleKeyPress} />
       </div>
     </div>
   );
